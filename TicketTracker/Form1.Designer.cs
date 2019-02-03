@@ -5,6 +5,7 @@ namespace TicketTracker
 {
     partial class Form1
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -36,57 +37,67 @@ namespace TicketTracker
             this.databaseloc_textbox = new System.Windows.Forms.TextBox();
             this.lock_checkbox = new System.Windows.Forms.CheckBox();
             this.line1_checkbox = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.line1_sd_ticket_down = new System.Windows.Forms.Button();
             this.line1_sd_ticket_up = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.first_sd_tickets_textbox = new System.Windows.Forms.TextBox();
+            this.first_ml_tickets_textbox = new System.Windows.Forms.TextBox();
             this.line1_ml_ticket_up = new System.Windows.Forms.Button();
             this.line1_ml_ticket_down = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.first_emails_textbox = new System.Windows.Forms.TextBox();
             this.line1_email_count_up = new System.Windows.Forms.Button();
             this.line1_email_count_down = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.first_group = new System.Windows.Forms.GroupBox();
+            this.first_name_textbox = new System.Windows.Forms.TextBox();
+            this.first_ml_tickets_change = new System.Windows.Forms.Label();
+            this.first_emails_change = new System.Windows.Forms.Label();
+            this.first_sd_tickets_change = new System.Windows.Forms.Label();
+            this.second_group = new System.Windows.Forms.GroupBox();
+            this.second_ml_tickets_change = new System.Windows.Forms.Label();
+            this.second_emails_change = new System.Windows.Forms.Label();
+            this.second_sd_tickets_change = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.second_name_textbox = new System.Windows.Forms.TextBox();
+            this.second_emails_textbox = new System.Windows.Forms.TextBox();
+            this.second_ml_tickets_textbox = new System.Windows.Forms.TextBox();
+            this.second_sd_tickets_textbox = new System.Windows.Forms.TextBox();
+            this.line2_checkbox = new System.Windows.Forms.CheckBox();
+            this.third_group = new System.Windows.Forms.GroupBox();
+            this.third_ml_tickets_change = new System.Windows.Forms.Label();
+            this.third_emails_change = new System.Windows.Forms.Label();
+            this.third_sd_tickets_change = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.third_name_textbox = new System.Windows.Forms.TextBox();
+            this.third_emails_textbox = new System.Windows.Forms.TextBox();
+            this.third_ml_tickets_textbox = new System.Windows.Forms.TextBox();
+            this.third_sd_tickets_textbox = new System.Windows.Forms.TextBox();
+            this.line3_checkbox = new System.Windows.Forms.CheckBox();
+            this.reset_delta_button = new System.Windows.Forms.Button();
             label2 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.first_group.SuspendLayout();
+            this.second_group.SuspendLayout();
+            this.third_group.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(200, 48);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(60, 13);
+            label2.TabIndex = 5;
+            label2.Text = "SD Tickets";
             // 
             // label1
             // 
@@ -101,14 +112,14 @@ namespace TicketTracker
             // 
             this.databaseloc_textbox.Location = new System.Drawing.Point(139, 10);
             this.databaseloc_textbox.Name = "databaseloc_textbox";
-            this.databaseloc_textbox.Size = new System.Drawing.Size(276, 20);
+            this.databaseloc_textbox.Size = new System.Drawing.Size(245, 20);
             this.databaseloc_textbox.TabIndex = 1;
             this.databaseloc_textbox.Click += new System.EventHandler(this.databaseloc_click);
             // 
             // lock_checkbox
             // 
             this.lock_checkbox.AutoSize = true;
-            this.lock_checkbox.Location = new System.Drawing.Point(422, 13);
+            this.lock_checkbox.Location = new System.Drawing.Point(391, 13);
             this.lock_checkbox.Name = "lock_checkbox";
             this.lock_checkbox.Size = new System.Drawing.Size(50, 17);
             this.lock_checkbox.TabIndex = 2;
@@ -121,28 +132,12 @@ namespace TicketTracker
             this.line1_checkbox.AutoSize = true;
             this.line1_checkbox.Checked = true;
             this.line1_checkbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.line1_checkbox.Location = new System.Drawing.Point(5, 17);
+            this.line1_checkbox.Location = new System.Drawing.Point(12, 82);
             this.line1_checkbox.Name = "line1_checkbox";
             this.line1_checkbox.Size = new System.Drawing.Size(15, 14);
             this.line1_checkbox.TabIndex = 3;
             this.line1_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(27, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Tony";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(200, 48);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(60, 13);
-            label2.TabIndex = 5;
-            label2.Text = "SD Tickets";
+            this.line1_checkbox.CheckedChanged += new System.EventHandler(this.line1_checkbox_CheckedChanged);
             // 
             // label3
             // 
@@ -156,7 +151,7 @@ namespace TicketTracker
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(383, 48);
+            this.label4.Location = new System.Drawing.Point(373, 48);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 7;
@@ -164,7 +159,8 @@ namespace TicketTracker
             // 
             // line1_sd_ticket_down
             // 
-            this.line1_sd_ticket_down.Location = new System.Drawing.Point(182, 13);
+            this.line1_sd_ticket_down.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.line1_sd_ticket_down.Location = new System.Drawing.Point(161, 13);
             this.line1_sd_ticket_down.Name = "line1_sd_ticket_down";
             this.line1_sd_ticket_down.Size = new System.Drawing.Size(18, 23);
             this.line1_sd_ticket_down.TabIndex = 8;
@@ -173,35 +169,39 @@ namespace TicketTracker
             // 
             // line1_sd_ticket_up
             // 
-            this.line1_sd_ticket_up.Location = new System.Drawing.Point(234, 13);
+            this.line1_sd_ticket_up.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.line1_sd_ticket_up.Location = new System.Drawing.Point(213, 13);
             this.line1_sd_ticket_up.Name = "line1_sd_ticket_up";
             this.line1_sd_ticket_up.Size = new System.Drawing.Size(18, 23);
             this.line1_sd_ticket_up.TabIndex = 11;
             this.line1_sd_ticket_up.Text = ">";
             this.line1_sd_ticket_up.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // first_sd_tickets_textbox
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(197, 14);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(39, 20);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.Text = "7";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.first_sd_tickets_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.first_sd_tickets_textbox.Enabled = false;
+            this.first_sd_tickets_textbox.Location = new System.Drawing.Point(176, 14);
+            this.first_sd_tickets_textbox.Name = "first_sd_tickets_textbox";
+            this.first_sd_tickets_textbox.Size = new System.Drawing.Size(39, 20);
+            this.first_sd_tickets_textbox.TabIndex = 12;
+            this.first_sd_tickets_textbox.Text = "0";
+            this.first_sd_tickets_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // first_ml_tickets_textbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(285, 14);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(39, 20);
-            this.textBox3.TabIndex = 15;
-            this.textBox3.Text = "1";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.first_ml_tickets_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.first_ml_tickets_textbox.Location = new System.Drawing.Point(264, 14);
+            this.first_ml_tickets_textbox.Name = "first_ml_tickets_textbox";
+            this.first_ml_tickets_textbox.Size = new System.Drawing.Size(39, 20);
+            this.first_ml_tickets_textbox.TabIndex = 15;
+            this.first_ml_tickets_textbox.Text = "0";
+            this.first_ml_tickets_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // line1_ml_ticket_up
             // 
-            this.line1_ml_ticket_up.Location = new System.Drawing.Point(322, 13);
+            this.line1_ml_ticket_up.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.line1_ml_ticket_up.Location = new System.Drawing.Point(301, 13);
             this.line1_ml_ticket_up.Name = "line1_ml_ticket_up";
             this.line1_ml_ticket_up.Size = new System.Drawing.Size(18, 23);
             this.line1_ml_ticket_up.TabIndex = 14;
@@ -210,25 +210,28 @@ namespace TicketTracker
             // 
             // line1_ml_ticket_down
             // 
-            this.line1_ml_ticket_down.Location = new System.Drawing.Point(270, 13);
+            this.line1_ml_ticket_down.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.line1_ml_ticket_down.Location = new System.Drawing.Point(249, 13);
             this.line1_ml_ticket_down.Name = "line1_ml_ticket_down";
             this.line1_ml_ticket_down.Size = new System.Drawing.Size(18, 23);
             this.line1_ml_ticket_down.TabIndex = 13;
             this.line1_ml_ticket_down.Text = "<";
             this.line1_ml_ticket_down.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // first_emails_textbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(365, 14);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(39, 20);
-            this.textBox4.TabIndex = 18;
-            this.textBox4.Text = "22";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.first_emails_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.first_emails_textbox.Location = new System.Drawing.Point(344, 14);
+            this.first_emails_textbox.Name = "first_emails_textbox";
+            this.first_emails_textbox.Size = new System.Drawing.Size(39, 20);
+            this.first_emails_textbox.TabIndex = 18;
+            this.first_emails_textbox.Text = "0";
+            this.first_emails_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // line1_email_count_up
             // 
-            this.line1_email_count_up.Location = new System.Drawing.Point(402, 13);
+            this.line1_email_count_up.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.line1_email_count_up.Location = new System.Drawing.Point(381, 13);
             this.line1_email_count_up.Name = "line1_email_count_up";
             this.line1_email_count_up.Size = new System.Drawing.Size(18, 23);
             this.line1_email_count_up.TabIndex = 17;
@@ -237,114 +240,129 @@ namespace TicketTracker
             // 
             // line1_email_count_down
             // 
-            this.line1_email_count_down.Location = new System.Drawing.Point(350, 13);
+            this.line1_email_count_down.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.line1_email_count_down.Location = new System.Drawing.Point(329, 13);
             this.line1_email_count_down.Name = "line1_email_count_down";
             this.line1_email_count_down.Size = new System.Drawing.Size(18, 23);
             this.line1_email_count_down.TabIndex = 16;
             this.line1_email_count_down.Text = "<";
             this.line1_email_count_down.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // first_group
             // 
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.line1_email_count_up);
-            this.groupBox1.Controls.Add(this.line1_email_count_down);
-            this.groupBox1.Controls.Add(this.line1_ml_ticket_up);
-            this.groupBox1.Controls.Add(this.line1_ml_ticket_down);
-            this.groupBox1.Controls.Add(this.line1_sd_ticket_up);
-            this.groupBox1.Controls.Add(this.line1_sd_ticket_down);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.line1_checkbox);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Location = new System.Drawing.Point(16, 64);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(425, 60);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
+            this.first_group.Controls.Add(this.first_name_textbox);
+            this.first_group.Controls.Add(this.first_ml_tickets_change);
+            this.first_group.Controls.Add(this.first_emails_change);
+            this.first_group.Controls.Add(this.first_sd_tickets_change);
+            this.first_group.Controls.Add(this.line1_email_count_up);
+            this.first_group.Controls.Add(this.line1_email_count_down);
+            this.first_group.Controls.Add(this.line1_ml_ticket_up);
+            this.first_group.Controls.Add(this.line1_ml_ticket_down);
+            this.first_group.Controls.Add(this.line1_sd_ticket_up);
+            this.first_group.Controls.Add(this.line1_sd_ticket_down);
+            this.first_group.Controls.Add(this.first_emails_textbox);
+            this.first_group.Controls.Add(this.first_ml_tickets_textbox);
+            this.first_group.Controls.Add(this.first_sd_tickets_textbox);
+            this.first_group.Location = new System.Drawing.Point(32, 64);
+            this.first_group.Name = "first_group";
+            this.first_group.Size = new System.Drawing.Size(404, 60);
+            this.first_group.TabIndex = 19;
+            this.first_group.TabStop = false;
             // 
-            // label5
+            // first_name_textbox
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(188, 39);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "ΔToday: 1";
+            this.first_name_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.first_name_textbox.Location = new System.Drawing.Point(6, 14);
+            this.first_name_textbox.Name = "first_name_textbox";
+            this.first_name_textbox.Size = new System.Drawing.Size(140, 20);
+            this.first_name_textbox.TabIndex = 22;
+            this.first_name_textbox.Text = "Tony";
             // 
-            // label6
+            // first_ml_tickets_change
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(356, 39);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 13);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "ΔToday: 22";
+            this.first_ml_tickets_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.first_ml_tickets_change.AutoSize = true;
+            this.first_ml_tickets_change.Location = new System.Drawing.Point(254, 39);
+            this.first_ml_tickets_change.Name = "first_ml_tickets_change";
+            this.first_ml_tickets_change.Size = new System.Drawing.Size(56, 13);
+            this.first_ml_tickets_change.TabIndex = 21;
+            this.first_ml_tickets_change.Text = "ΔToday: 0";
             // 
-            // label7
+            // first_emails_change
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(275, 39);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "ΔToday: 1";
+            this.first_emails_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.first_emails_change.AutoSize = true;
+            this.first_emails_change.Location = new System.Drawing.Point(335, 39);
+            this.first_emails_change.Name = "first_emails_change";
+            this.first_emails_change.Size = new System.Drawing.Size(56, 13);
+            this.first_emails_change.TabIndex = 20;
+            this.first_emails_change.Text = "ΔToday: 0";
             // 
-            // groupBox2
+            // first_sd_tickets_change
             // 
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Location = new System.Drawing.Point(16, 130);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(425, 60);
-            this.groupBox2.TabIndex = 22;
-            this.groupBox2.TabStop = false;
+            this.first_sd_tickets_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.first_sd_tickets_change.AutoSize = true;
+            this.first_sd_tickets_change.Location = new System.Drawing.Point(167, 39);
+            this.first_sd_tickets_change.Name = "first_sd_tickets_change";
+            this.first_sd_tickets_change.Size = new System.Drawing.Size(56, 13);
+            this.first_sd_tickets_change.TabIndex = 19;
+            this.first_sd_tickets_change.Text = "ΔToday: 0";
             // 
-            // label8
+            // second_group
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(275, 39);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 13);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "ΔToday: 5";
+            this.second_group.Controls.Add(this.second_ml_tickets_change);
+            this.second_group.Controls.Add(this.second_emails_change);
+            this.second_group.Controls.Add(this.second_sd_tickets_change);
+            this.second_group.Controls.Add(this.button1);
+            this.second_group.Controls.Add(this.button2);
+            this.second_group.Controls.Add(this.button3);
+            this.second_group.Controls.Add(this.button4);
+            this.second_group.Controls.Add(this.button5);
+            this.second_group.Controls.Add(this.button6);
+            this.second_group.Controls.Add(this.second_name_textbox);
+            this.second_group.Controls.Add(this.second_emails_textbox);
+            this.second_group.Controls.Add(this.second_ml_tickets_textbox);
+            this.second_group.Controls.Add(this.second_sd_tickets_textbox);
+            this.second_group.Location = new System.Drawing.Point(32, 130);
+            this.second_group.Name = "second_group";
+            this.second_group.Size = new System.Drawing.Size(404, 60);
+            this.second_group.TabIndex = 22;
+            this.second_group.TabStop = false;
             // 
-            // label9
+            // second_ml_tickets_change
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(356, 39);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "ΔToday: 3";
+            this.second_ml_tickets_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.second_ml_tickets_change.AutoSize = true;
+            this.second_ml_tickets_change.Location = new System.Drawing.Point(254, 39);
+            this.second_ml_tickets_change.Name = "second_ml_tickets_change";
+            this.second_ml_tickets_change.Size = new System.Drawing.Size(56, 13);
+            this.second_ml_tickets_change.TabIndex = 21;
+            this.second_ml_tickets_change.Text = "ΔToday: 0";
             // 
-            // label10
+            // second_emails_change
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(188, 39);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 13);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "ΔToday: 1";
+            this.second_emails_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.second_emails_change.AutoSize = true;
+            this.second_emails_change.Location = new System.Drawing.Point(335, 39);
+            this.second_emails_change.Name = "second_emails_change";
+            this.second_emails_change.Size = new System.Drawing.Size(56, 13);
+            this.second_emails_change.TabIndex = 20;
+            this.second_emails_change.Text = "ΔToday: 0";
+            // 
+            // second_sd_tickets_change
+            // 
+            this.second_sd_tickets_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.second_sd_tickets_change.AutoSize = true;
+            this.second_sd_tickets_change.Location = new System.Drawing.Point(167, 39);
+            this.second_sd_tickets_change.Name = "second_sd_tickets_change";
+            this.second_sd_tickets_change.Size = new System.Drawing.Size(56, 13);
+            this.second_sd_tickets_change.TabIndex = 19;
+            this.second_sd_tickets_change.Text = "ΔToday: 0";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(402, 13);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button1.Location = new System.Drawing.Point(381, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(18, 23);
             this.button1.TabIndex = 17;
@@ -353,7 +371,8 @@ namespace TicketTracker
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(350, 13);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button2.Location = new System.Drawing.Point(329, 13);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(18, 23);
             this.button2.TabIndex = 16;
@@ -362,7 +381,8 @@ namespace TicketTracker
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(322, 13);
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button3.Location = new System.Drawing.Point(301, 13);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(18, 23);
             this.button3.TabIndex = 14;
@@ -371,7 +391,8 @@ namespace TicketTracker
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(270, 13);
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button4.Location = new System.Drawing.Point(249, 13);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(18, 23);
             this.button4.TabIndex = 13;
@@ -380,7 +401,8 @@ namespace TicketTracker
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(234, 13);
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button5.Location = new System.Drawing.Point(213, 13);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(18, 23);
             this.button5.TabIndex = 11;
@@ -389,112 +411,121 @@ namespace TicketTracker
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(182, 13);
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button6.Location = new System.Drawing.Point(161, 13);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(18, 23);
             this.button6.TabIndex = 8;
             this.button6.Text = "<";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // second_name_textbox
             // 
-            this.textBox5.Location = new System.Drawing.Point(27, 14);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(140, 20);
-            this.textBox5.TabIndex = 4;
-            this.textBox5.Text = "David";
+            this.second_name_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.second_name_textbox.Location = new System.Drawing.Point(6, 14);
+            this.second_name_textbox.Name = "second_name_textbox";
+            this.second_name_textbox.Size = new System.Drawing.Size(140, 20);
+            this.second_name_textbox.TabIndex = 4;
+            this.second_name_textbox.Text = "David";
             // 
-            // checkBox1
+            // second_emails_textbox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(5, 17);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.second_emails_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.second_emails_textbox.Location = new System.Drawing.Point(344, 14);
+            this.second_emails_textbox.Name = "second_emails_textbox";
+            this.second_emails_textbox.Size = new System.Drawing.Size(39, 20);
+            this.second_emails_textbox.TabIndex = 18;
+            this.second_emails_textbox.Text = "0";
+            this.second_emails_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // second_ml_tickets_textbox
             // 
-            this.textBox6.Location = new System.Drawing.Point(365, 14);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(39, 20);
-            this.textBox6.TabIndex = 18;
-            this.textBox6.Text = "5";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.second_ml_tickets_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.second_ml_tickets_textbox.Location = new System.Drawing.Point(264, 14);
+            this.second_ml_tickets_textbox.Name = "second_ml_tickets_textbox";
+            this.second_ml_tickets_textbox.Size = new System.Drawing.Size(39, 20);
+            this.second_ml_tickets_textbox.TabIndex = 15;
+            this.second_ml_tickets_textbox.Text = "0";
+            this.second_ml_tickets_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // second_sd_tickets_textbox
             // 
-            this.textBox7.Location = new System.Drawing.Point(285, 14);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(39, 20);
-            this.textBox7.TabIndex = 15;
-            this.textBox7.Text = "12";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.second_sd_tickets_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.second_sd_tickets_textbox.Enabled = false;
+            this.second_sd_tickets_textbox.Location = new System.Drawing.Point(176, 14);
+            this.second_sd_tickets_textbox.Name = "second_sd_tickets_textbox";
+            this.second_sd_tickets_textbox.Size = new System.Drawing.Size(39, 20);
+            this.second_sd_tickets_textbox.TabIndex = 12;
+            this.second_sd_tickets_textbox.Text = "0";
+            this.second_sd_tickets_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox8
+            // line2_checkbox
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(197, 14);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(39, 20);
-            this.textBox8.TabIndex = 12;
-            this.textBox8.Text = "4";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.line2_checkbox.AutoSize = true;
+            this.line2_checkbox.Checked = true;
+            this.line2_checkbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.line2_checkbox.Location = new System.Drawing.Point(12, 147);
+            this.line2_checkbox.Name = "line2_checkbox";
+            this.line2_checkbox.Size = new System.Drawing.Size(15, 14);
+            this.line2_checkbox.TabIndex = 3;
+            this.line2_checkbox.UseVisualStyleBackColor = true;
+            this.line2_checkbox.CheckedChanged += new System.EventHandler(this.line2_checkbox_CheckedChanged);
             // 
-            // groupBox3
+            // third_group
             // 
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.button9);
-            this.groupBox3.Controls.Add(this.button10);
-            this.groupBox3.Controls.Add(this.button11);
-            this.groupBox3.Controls.Add(this.button12);
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Controls.Add(this.checkBox2);
-            this.groupBox3.Controls.Add(this.textBox10);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Location = new System.Drawing.Point(16, 196);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(425, 60);
-            this.groupBox3.TabIndex = 22;
-            this.groupBox3.TabStop = false;
+            this.third_group.Controls.Add(this.third_ml_tickets_change);
+            this.third_group.Controls.Add(this.third_emails_change);
+            this.third_group.Controls.Add(this.third_sd_tickets_change);
+            this.third_group.Controls.Add(this.button7);
+            this.third_group.Controls.Add(this.button8);
+            this.third_group.Controls.Add(this.button9);
+            this.third_group.Controls.Add(this.button10);
+            this.third_group.Controls.Add(this.button11);
+            this.third_group.Controls.Add(this.button12);
+            this.third_group.Controls.Add(this.third_name_textbox);
+            this.third_group.Controls.Add(this.third_emails_textbox);
+            this.third_group.Controls.Add(this.third_ml_tickets_textbox);
+            this.third_group.Controls.Add(this.third_sd_tickets_textbox);
+            this.third_group.Location = new System.Drawing.Point(32, 196);
+            this.third_group.Name = "third_group";
+            this.third_group.Size = new System.Drawing.Size(404, 60);
+            this.third_group.TabIndex = 22;
+            this.third_group.TabStop = false;
             // 
-            // label11
+            // third_ml_tickets_change
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(275, 39);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "ΔToday: 15";
+            this.third_ml_tickets_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.third_ml_tickets_change.AutoSize = true;
+            this.third_ml_tickets_change.Location = new System.Drawing.Point(254, 39);
+            this.third_ml_tickets_change.Name = "third_ml_tickets_change";
+            this.third_ml_tickets_change.Size = new System.Drawing.Size(56, 13);
+            this.third_ml_tickets_change.TabIndex = 21;
+            this.third_ml_tickets_change.Text = "ΔToday: 0";
             // 
-            // label12
+            // third_emails_change
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(356, 39);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 13);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "ΔToday: 1";
+            this.third_emails_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.third_emails_change.AutoSize = true;
+            this.third_emails_change.Location = new System.Drawing.Point(335, 39);
+            this.third_emails_change.Name = "third_emails_change";
+            this.third_emails_change.Size = new System.Drawing.Size(56, 13);
+            this.third_emails_change.TabIndex = 20;
+            this.third_emails_change.Text = "ΔToday: 0";
             // 
-            // label13
+            // third_sd_tickets_change
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(188, 39);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 13);
-            this.label13.TabIndex = 19;
-            this.label13.Text = "ΔToday: 1";
+            this.third_sd_tickets_change.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.third_sd_tickets_change.AutoSize = true;
+            this.third_sd_tickets_change.Location = new System.Drawing.Point(167, 39);
+            this.third_sd_tickets_change.Name = "third_sd_tickets_change";
+            this.third_sd_tickets_change.Size = new System.Drawing.Size(56, 13);
+            this.third_sd_tickets_change.TabIndex = 19;
+            this.third_sd_tickets_change.Text = "ΔToday: 0";
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(402, 13);
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button7.Location = new System.Drawing.Point(381, 13);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(18, 23);
             this.button7.TabIndex = 17;
@@ -503,7 +534,8 @@ namespace TicketTracker
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(350, 13);
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button8.Location = new System.Drawing.Point(329, 13);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(18, 23);
             this.button8.TabIndex = 16;
@@ -512,7 +544,8 @@ namespace TicketTracker
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(322, 13);
+            this.button9.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button9.Location = new System.Drawing.Point(301, 13);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(18, 23);
             this.button9.TabIndex = 14;
@@ -521,7 +554,8 @@ namespace TicketTracker
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(270, 13);
+            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button10.Location = new System.Drawing.Point(249, 13);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(18, 23);
             this.button10.TabIndex = 13;
@@ -530,7 +564,8 @@ namespace TicketTracker
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(234, 13);
+            this.button11.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button11.Location = new System.Drawing.Point(213, 13);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(18, 23);
             this.button11.TabIndex = 11;
@@ -539,82 +574,104 @@ namespace TicketTracker
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(182, 13);
+            this.button12.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.button12.Location = new System.Drawing.Point(161, 13);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(18, 23);
             this.button12.TabIndex = 8;
             this.button12.Text = "<";
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // third_name_textbox
             // 
-            this.textBox9.Location = new System.Drawing.Point(27, 14);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(140, 20);
-            this.textBox9.TabIndex = 4;
-            this.textBox9.Text = "Michela";
+            this.third_name_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.third_name_textbox.Location = new System.Drawing.Point(6, 14);
+            this.third_name_textbox.Name = "third_name_textbox";
+            this.third_name_textbox.Size = new System.Drawing.Size(140, 20);
+            this.third_name_textbox.TabIndex = 4;
+            this.third_name_textbox.Text = "Michela";
             // 
-            // checkBox2
+            // third_emails_textbox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(5, 17);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.third_emails_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.third_emails_textbox.Location = new System.Drawing.Point(344, 14);
+            this.third_emails_textbox.Name = "third_emails_textbox";
+            this.third_emails_textbox.Size = new System.Drawing.Size(39, 20);
+            this.third_emails_textbox.TabIndex = 18;
+            this.third_emails_textbox.Text = "0";
+            this.third_emails_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // third_ml_tickets_textbox
             // 
-            this.textBox10.Location = new System.Drawing.Point(365, 14);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(39, 20);
-            this.textBox10.TabIndex = 18;
-            this.textBox10.Text = "4";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.third_ml_tickets_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.third_ml_tickets_textbox.Location = new System.Drawing.Point(264, 14);
+            this.third_ml_tickets_textbox.Name = "third_ml_tickets_textbox";
+            this.third_ml_tickets_textbox.Size = new System.Drawing.Size(39, 20);
+            this.third_ml_tickets_textbox.TabIndex = 15;
+            this.third_ml_tickets_textbox.Text = "0";
+            this.third_ml_tickets_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox11
+            // third_sd_tickets_textbox
             // 
-            this.textBox11.Location = new System.Drawing.Point(285, 14);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(39, 20);
-            this.textBox11.TabIndex = 15;
-            this.textBox11.Text = "9001";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.third_sd_tickets_textbox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.third_sd_tickets_textbox.Enabled = false;
+            this.third_sd_tickets_textbox.Location = new System.Drawing.Point(176, 14);
+            this.third_sd_tickets_textbox.Name = "third_sd_tickets_textbox";
+            this.third_sd_tickets_textbox.Size = new System.Drawing.Size(39, 20);
+            this.third_sd_tickets_textbox.TabIndex = 12;
+            this.third_sd_tickets_textbox.Text = "0";
+            this.third_sd_tickets_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // line3_checkbox
             // 
-            this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(197, 14);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(39, 20);
-            this.textBox12.TabIndex = 12;
-            this.textBox12.Text = "3";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.line3_checkbox.AutoSize = true;
+            this.line3_checkbox.Checked = true;
+            this.line3_checkbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.line3_checkbox.Location = new System.Drawing.Point(11, 213);
+            this.line3_checkbox.Name = "line3_checkbox";
+            this.line3_checkbox.Size = new System.Drawing.Size(15, 14);
+            this.line3_checkbox.TabIndex = 3;
+            this.line3_checkbox.UseVisualStyleBackColor = true;
+            this.line3_checkbox.CheckedChanged += new System.EventHandler(this.line3_checkbox_CheckedChanged);
+            // 
+            // reset_delta_button
+            // 
+            this.reset_delta_button.Location = new System.Drawing.Point(13, 36);
+            this.reset_delta_button.Name = "reset_delta_button";
+            this.reset_delta_button.Size = new System.Drawing.Size(75, 23);
+            this.reset_delta_button.TabIndex = 23;
+            this.reset_delta_button.Text = "New Day";
+            this.reset_delta_button.UseVisualStyleBackColor = true;
+            this.reset_delta_button.Click += new System.EventHandler(this.reset_delta_button_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 375);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(443, 269);
+            this.Controls.Add(this.reset_delta_button);
+            this.Controls.Add(this.third_group);
+            this.Controls.Add(this.second_group);
+            this.Controls.Add(this.first_group);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(label2);
             this.Controls.Add(this.lock_checkbox);
             this.Controls.Add(this.databaseloc_textbox);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.line1_checkbox);
+            this.Controls.Add(this.line3_checkbox);
+            this.Controls.Add(this.line2_checkbox);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.first_group.ResumeLayout(false);
+            this.first_group.PerformLayout();
+            this.second_group.ResumeLayout(false);
+            this.second_group.PerformLayout();
+            this.third_group.ResumeLayout(false);
+            this.third_group.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -631,52 +688,53 @@ namespace TicketTracker
         private System.Windows.Forms.TextBox databaseloc_textbox;
         private System.Windows.Forms.CheckBox lock_checkbox;
         private System.Windows.Forms.CheckBox line1_checkbox;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button line1_sd_ticket_down;
         private System.Windows.Forms.Button line1_sd_ticket_up;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox first_sd_tickets_textbox;
+        private System.Windows.Forms.TextBox first_ml_tickets_textbox;
         private System.Windows.Forms.Button line1_ml_ticket_up;
         private System.Windows.Forms.Button line1_ml_ticket_down;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox first_emails_textbox;
         private System.Windows.Forms.Button line1_email_count_up;
         private System.Windows.Forms.Button line1_email_count_down;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox first_group;
+        private System.Windows.Forms.Label first_ml_tickets_change;
+        private System.Windows.Forms.Label first_emails_change;
+        private System.Windows.Forms.Label first_sd_tickets_change;
+        private System.Windows.Forms.GroupBox second_group;
+        private System.Windows.Forms.Label second_ml_tickets_change;
+        private System.Windows.Forms.Label second_emails_change;
+        private System.Windows.Forms.Label second_sd_tickets_change;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox second_name_textbox;
+        private System.Windows.Forms.CheckBox line2_checkbox;
+        private System.Windows.Forms.TextBox second_emails_textbox;
+        private System.Windows.Forms.TextBox second_ml_tickets_textbox;
+        private System.Windows.Forms.TextBox second_sd_tickets_textbox;
+        private System.Windows.Forms.GroupBox third_group;
+        private System.Windows.Forms.Label third_ml_tickets_change;
+        private System.Windows.Forms.Label third_emails_change;
+        private System.Windows.Forms.Label third_sd_tickets_change;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox third_name_textbox;
+        private System.Windows.Forms.CheckBox line3_checkbox;
+        private System.Windows.Forms.TextBox third_emails_textbox;
+        private System.Windows.Forms.TextBox third_ml_tickets_textbox;
+        private System.Windows.Forms.TextBox third_sd_tickets_textbox;
+        private System.Windows.Forms.TextBox first_name_textbox;
+        private System.Windows.Forms.Button reset_delta_button;
     }
 }
 
